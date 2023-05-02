@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*-------------------Header Part---------------------*/
+header {
+  width:100%;
+  position:fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+  padding: 20px 70px;
+  transition: 0.6s;
+  border: 12px sold whitesmoke;
+  border-radius: 12px;
+}
+
+.LogoName {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3a6cf4;
+  font-size: 1.8em;  
+  vertical-align: top; 
+}
+
+.Header img{
+  width: 40px;
+  height: 45px;
+  vertical-align: top;
+}
+
+.Navigation a {
+  text-decoration: none;
+  color: #3a6cf4;
+  float: left;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+.Navigation a:hover {
+  color: #003650;  
+  border-bottom: 2px solid #3a6cf4;;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+
+
+/*-------------------Home Part---------------------*/
+section {
+    padding: 25px 40px;    
+}
+
+.Main {
+  width: 97%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(Image/climatechange.jpeg) no-repeat;
+  background-size:cover ;
+  background-size: 720px 520px;
+  background-position:right;
+  border: 7px solid #003650;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.Climate
+{
+  color:#0297AE;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+.Change
+{
+  color:#003B64;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+.Main h2 {
+  font-size: 2.6em;
+  font-weight:500;
+  padding-left: 0px;
+  line-height: 1.1;
+}
+
+.Main h3 {
+  font-size:1.0em;
+  font-weight: bold;
+  padding-left: 20px;
+  color:black;
+  line-height: 1.7;
+}
+
+.joinButton {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+
+.joinButton:link,
+.joinButton:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.joinButton:hover,
+.joinButton:active {
+  background-color: #099268;
+  transition: 0.7s ease;
+  transform: scale(1.1);
+}
+
+
+/*-------------------News Part---------------------*/
+.Title{
+  display: flex;
+  justify-content: center;
+  color:#087f5b;
+  font-size: 2.2em;
+  text-decoration: underline;  
+}
+
+.Content_News{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+.Card{
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 100px rgba(1 1 1 / 15%);
+  transition: 0.7s ease;
+
+  border: 5px solid  #3a6cf4;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.Card:hover{
+  transform: scale(1.1);
+}
+
+.Card img {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  border-radius: 25px;
+}
+
+.Info p{
+  margin: 10px;
+}
+
+
+/*------------------Contact Part---------------------*/
+.Join_Contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+.Title_Join{
+  display: flex;
+  padding-left: 120px;
+  color:black;
+  font-size: 1.9em;
+  text-decoration: none;  
+}
+  
+.InfoWel, .Info_Details {
+  justify-content: center;
+  background-color: #EEF5FF;
+  padding-left: 75px;
+  border: 5px solid  #EEF5FF;
+  border-radius: 25px;
+}
+
+.InfoWel h3{
+  padding-top: 80px;
+  font-size:larger;
+  font-weight:500;
+  line-height: 2.5;
+}
+
+.InfoContact {
+  justify-content: center;
+  background-color: #1DBC60;
+  padding: 70px;
+  border: 5px solid  #EEF5FF;
+  border-radius: 25px;
+}
+
+#myForm input {
+  width: 100%;
+  padding: 5px ;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  background-color: #1DBC60;
+  color: white;
+  transition: 0.7s ease;
+  
+}
+
+input:hover{
+  transform: scale(1.1);
+}
+
+  
+select {
+  width: 100%;
+  padding: 12px 5px;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  background-color: #1DBC60;
+  transition: 0.7s ease;
+}
+
+button {
+  width: 40%;
+  font-size: 15px;
+  padding: 16px 32px;
+  color: #4CAF50;
+  background-color: white;
+  transition: 0.7s ease;
+  border-radius: 100px;
+  display: inline-block;
+  border: 2px solid #4CAF50; ;
+  border-radius: 8px;
+}
+
+
+button:link,
+button:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+button:hover,
+button:active {
+  background-color: #099268;
+  color: white;
+  transition: 0.7s ease;
+  transform: scale(1.1);
+} 
+
+  
+/*------------------About Part---------------------*/
+
+.About{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  border: 5px solid  #EEF5FF;
+  border-radius: 25px;
+  background-color:#EEF5FF; 
+  margin: 40px;
+}
+
+.Title_About{
+  display: flex;
+  justify-content: center;
+  color:#087f5b;
+  font-size: 2.1em;
+  text-decoration: underline; 
+}
+
+.Info_Details p{
+  padding: 29px 20px;
+  margin: 10px ;
+}
+
+.Img_Details {
+  background: url(Image/people\ in\ company.jpg) no-repeat;
+  background-size: contain ;
+  background-size: 580px 600px;
+  background-position:right center; 
+  border-radius: 25px;
+  box-shadow: 0 5px 15px ;
+}
+
+
+/*------------------Footer Part---------------------*/
+
+.Footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  
+  flex-wrap: wrap;  
+  border: 5px solid  #EEF5FF;
+  border-radius: 25px;
+  background-color:#EEF5FF; 
+  padding: 80px;
+  margin: 50px;
+  line-height: 2;
+ 
+}
+.Footer_Title{
+  display: flex;
+  justify-content: left;
+  color:#087f5b;
+  font-size: 1.5em;
+   
+  padding-top: 0px;
+}
+li{
+ 
+    list-style-type: none;
+  
+}
+
+.div2{
+  padding-top:85px ;
+  text-decoration: none;
+}
+
+.div3 a{
+  color:#3a6cf4; ;
+  font-size: 1.7em;
+  padding-right:30px ;
+}
